@@ -23,7 +23,7 @@ angular.module('NarrowItDownApp', [])
 
 function FoundItemsDirective() {
   var ddo = {
-    templateUrl: 'founditems.html',
+    templateUrl: 'foundItems.html',
     scope: {
       items: '=',
       refineFurther: '&'
