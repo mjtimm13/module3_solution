@@ -1,0 +1,12 @@
+<br>
+<br>
+<div class="alert alert-primary" role="alert" ng-if="narrowit.items.length == 0" class="error">
+  <h3>No Items Found</h3>
+</div>
+<h2>Found Items: {{ narrowit.items.length }}</h2>
+<ul>
+<li ng-repeat="item in narrowit.items">
+   {{$index + 1}}. Short Name: {{item.short_name}}, Name: {{item.name}}, Description: {{item.description}}
+   <button class="btn btn-default" ng-click="narrowit.refineFurther({index: $index});"><span class="glyphicon glyphicon-remove">
+   </span>Don't want this one!</button></></li>
+</ul>
